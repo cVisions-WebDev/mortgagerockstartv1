@@ -152,11 +152,11 @@ function ContactPage() {
               />
             </div>
 
-            <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-8 flex flex-col gap-3">
               <button
                 type="submit"
                 disabled={submitting}
-                className="btn-primary disabled:opacity-60"
+                className="btn-primary w-full disabled:opacity-60"
               >
                 {submitting
                   ? "Sending\u2026"
