@@ -136,6 +136,7 @@ function ContactPage() {
                 error={errors.email}
               />
               <Field
+                className="sm:col-span-2"
                 label="Phone"
                 name="phone"
                 type="tel"
