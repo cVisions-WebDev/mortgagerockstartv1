@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CTABand, PageHero, PullQuote, Section, Sheet } from "@/components/dossier";
+import { CTABand, PageHero, Section, Sheet } from "@/components/dossier";
 import mattAsset from "@/assets/matt.jpg.asset.json";
+import meetingImg from "@/assets/meeting.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -141,6 +142,7 @@ function AboutPage() {
 
       <Section
         tone="paper-2"
+        align="center"
         eyebrow="Core values"
         heading="The room is different. The standard is the same."
         intro={
@@ -154,7 +156,7 @@ function AboutPage() {
       >
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {values.map((v, i) => (
-            <Sheet key={v.title} index={`0${i + 1} / 05`} label="Principle">
+            <Sheet key={v.title} index={`0${i + 1} / 05`} label={v.title}>
               <h3 className="font-display text-xl font-black">{v.title}</h3>
               <p className="mt-3 text-sm text-[color:var(--muted-foreground)]">
                 {v.body}
@@ -190,6 +192,7 @@ function AboutPage() {
 
       <Section
         tone="ink"
+        align="left"
         eyebrow="Brand architecture"
         heading={
           <>
@@ -208,7 +211,7 @@ function AboutPage() {
           </p>
         }
       >
-        <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+        <div className="grid items-center gap-8 lg:grid-cols-[1.4fr_1fr]">
           <div className="space-y-4 text-white/80">
             <p>
               Clients work directly with Matt for guidance, strategy,
@@ -226,17 +229,21 @@ function AboutPage() {
               Start the Conversation
             </Link>
           </div>
-          <div className="flex flex-col justify-end">
-            <PullQuote>
-              I&rsquo;ll get back to you with the right answer.
-            </PullQuote>
+          <div className="relative mx-auto h-[300px] w-full max-w-[420px] lg:mx-0">
+            <div className="photo-frame h-full w-full">
+              <img
+                src={meetingImg}
+                alt="One-on-one mortgage guidance session"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </Section>
 
       <CTABand
         eyebrow="Ready when you are"
-        heading="Let\u2019s start with a conversation."
+        heading="Let's Start with a Conversation"
         primary="Schedule Your Strategy Session"
         primaryTo="/contact"
         secondary="Explore Loan Programs"
