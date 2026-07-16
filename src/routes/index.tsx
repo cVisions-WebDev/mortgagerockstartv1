@@ -650,6 +650,7 @@ function BrandPillars() {
   const [active, setActive] = useState(0);
   return (
     <Section
+      align="left"
       eyebrow="Why Mortgage Rockstar"
       heading="More Than Mortgage Financing"
       intro={
