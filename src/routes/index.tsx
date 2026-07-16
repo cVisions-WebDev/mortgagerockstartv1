@@ -432,7 +432,7 @@ function PortraitBand() {
           {/* Big background numeral */}
           <span
             aria-hidden
-            className="pointer-events-none absolute -left-4 -top-10 font-display text-[10rem] font-black leading-none text-[color:var(--blue-soft)] sm:text-[14rem]"
+            className="pointer-events-none absolute -left-6 -top-16 -z-10 font-display text-[8rem] font-black leading-none text-[color:var(--blue-soft)] sm:text-[11rem]"
           >
             01
           </span>
