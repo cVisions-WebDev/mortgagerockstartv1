@@ -58,6 +58,7 @@ export function Section({
   children,
   className = "",
   tone = "paper",
+  align = "default",
 }: {
   id?: string;
   eyebrow?: string;
@@ -66,6 +67,7 @@ export function Section({
   children?: ReactNode;
   className?: string;
   tone?: "paper" | "ink" | "paper-2";
+  align?: "default" | "left" | "center";
 }) {
   const bg =
     tone === "ink"
@@ -73,11 +75,17 @@ export function Section({
       : tone === "paper-2"
         ? "bg-[color:var(--paper-2)]"
         : "bg-[color:var(--paper)]";
+  const headerAlign =
+    align === "center"
+      ? "mx-auto text-center"
+      : align === "left"
+        ? "mr-auto"
+        : "mx-auto";
   return (
     <section id={id} className={`relative ${bg} ${className}`}>
       <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
         {(eyebrow || heading || intro) && (
-          <Reveal as="div" className="mx-auto mb-12 max-w-3xl">
+          <Reveal as="div" className={`mb-12 max-w-3xl ${headerAlign}`}>
             {eyebrow ? (
               <p
                 className={`label-eyebrow ${tone === "ink" ? "text-[color:var(--orange)]" : ""}`}
