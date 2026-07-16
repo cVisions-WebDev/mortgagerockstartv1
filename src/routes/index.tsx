@@ -708,6 +708,7 @@ function LoanExplorer() {
   return (
     <Section
       tone="paper-2"
+      align="center"
       eyebrow="Need a loan?"
       heading="Financing Solutions Built Around Your Goals"
       intro={
@@ -725,12 +726,9 @@ function LoanExplorer() {
       <Reveal>
         <LoanSelector />
       </Reveal>
-      <div className="mt-10 flex flex-wrap justify-center gap-3">
+      <div className="mt-10 flex justify-center">
         <Link to="/loan-programs" className="btn-primary">
           Find the Right Loan Program
-        </Link>
-        <Link to="/contact" className="btn-ghost">
-          Talk With a Mortgage Advisor
         </Link>
       </div>
     </Section>
