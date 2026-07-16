@@ -891,8 +891,7 @@ function SuccessPreview() {
       </div>
       <Reveal delay={0.2}>
         <div className="mt-12 mx-auto max-w-2xl text-center">
-          <PullQuote>The smartest buyers always do.</PullQuote>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
             <Link to="/success-stories" className="btn-primary">
               Read Client Success Stories
             </Link>
