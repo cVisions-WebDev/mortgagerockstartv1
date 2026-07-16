@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CTABand, PullQuote, Section, Sheet } from "@/components/dossier";
+import { Section, Sheet } from "@/components/dossier";
 import { LoanSelector } from "@/components/loan-selector";
 import {
   Float,
