@@ -178,8 +178,8 @@
 
 @utility dossier-grid {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 0.045) 1px, transparent 1px);
+    linear-gradient(to right, oklch(0.22 0.045 258 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.22 0.045 258 / 0.06) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
