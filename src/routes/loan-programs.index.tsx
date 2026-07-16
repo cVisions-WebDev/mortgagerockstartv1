@@ -15,8 +15,7 @@ export const Route = createFileRoute("/loan-programs/")({
       { property: "og:title", content: "Mortgage Financing Options" },
       {
         property: "og:description",
-        content:
-          "Explore financing solutions designed around your needs.",
+        content: "Explore financing solutions designed around your needs.",
       },
       { property: "og:url", content: "/loan-programs" },
     ],
@@ -31,23 +30,19 @@ function LoanProgramsIndex() {
       <PageHero
         eyebrow="Loan Programs"
         breadcrumb={
-          <HeroBreadcrumb
-            items={[{ label: "Home", to: "/" }, { label: "Loan Programs" }]}
-          />
+          <HeroBreadcrumb items={[{ label: "Home", to: "/" }, { label: "Loan Programs" }]} />
         }
         title={
           <>
-            Financing Solutions{" "}
-            <span className="marker-underline">Built Around Your Goals</span>.
+            Financing Solutions <span className="marker-underline">Built Around Your Goals</span>.
           </>
         }
         intro={
           <>
             <p>Every borrower has a unique story.</p>
             <p>
-              Rather than simply presenting loan products, Mortgage
-              Rockstar helps determine which financing strategy aligns with
-              your financial goals, lifestyle, and future plans.
+              Rather than simply presenting loan products, Mortgage Rockstar helps determine which
+              financing strategy aligns with your financial goals, lifestyle, and future plans.
             </p>
             <p>Explore financing solutions designed around your needs.</p>
           </>
@@ -65,15 +60,14 @@ function LoanProgramsIndex() {
         ]}
       />
 
-
       <Section
         align="center"
         eyebrow="Program index"
         heading="Choose the file that fits your situation."
         intro={
           <p>
-            Select a program to review its approved overview. Every page
-            links to a full strategy conversation with Matt.
+            Select a program to review its approved overview. Every page links to a full strategy
+            conversation with Matt.
           </p>
         }
       >
@@ -85,9 +79,8 @@ function LoanProgramsIndex() {
         heading="Talk through your situation first."
         body={
           <p>
-            The right program depends on your goals, timing, and financial
-            picture. A short conversation is usually the fastest way to
-            find it.
+            The right program depends on your goals, timing, and financial picture. A short
+            conversation is usually the fastest way to find it.
           </p>
         }
         primary="Schedule Your Mortgage Strategy Session"

@@ -15,8 +15,7 @@ export const Route = createFileRoute("/success-stories")({
       { property: "og:title", content: "Client Success Stories" },
       {
         property: "og:description",
-        content:
-          "What happens when strategy comes before financing.",
+        content: "What happens when strategy comes before financing.",
       },
       { property: "og:url", content: "/success-stories" },
     ],
@@ -39,22 +38,18 @@ function SuccessStoriesPage() {
         eyebrow="Success Stories"
         title={
           <>
-            Real People. Real Goals.{" "}
-            <span className="marker-underline">Real Results.</span>
+            Real People. Real Goals. <span className="marker-underline">Real Results.</span>
           </>
         }
         intro={
           <>
             <p>Every home purchase tells a unique story.</p>
             <p>
-              Mortgage Rockstar has helped families, professionals,
-              veterans, investors, and first-time buyers move forward with
-              confidence through education and personalized guidance.
+              Mortgage Rockstar has helped families, professionals, veterans, investors, and
+              first-time buyers move forward with confidence through education and personalized
+              guidance.
             </p>
-            <p>
-              Their experiences reflect what happens when strategy comes
-              before financing.
-            </p>
+            <p>Their experiences reflect what happens when strategy comes before financing.</p>
           </>
         }
         image={familyImg}
@@ -62,26 +57,16 @@ function SuccessStoriesPage() {
         stamp="Closed"
         fileLabel="Case Log"
         fileTitle="Selected outcomes"
-        fileBullets={[
-          "First-time buyers",
-          "Move-up families",
-          "Veterans & VA",
-          "Investor / DSCR",
-        ]}
+        fileBullets={["First-time buyers", "Move-up families", "Veterans & VA", "Investor / DSCR"]}
       />
-
 
       {approved.length > 0 ? (
         <Section eyebrow="Case files" heading="Selected stories.">
           <div className="grid gap-6 lg:grid-cols-2">
             {approved.map((s) => (
               <Sheet key={s.title} label="Case File">
-                <h3 className="font-display text-2xl font-black">
-                  {s.title}
-                </h3>
-                <p className="mt-3 text-[color:var(--muted-foreground)]">
-                  {s.approvedNarrative}
-                </p>
+                <h3 className="font-display text-2xl font-black">{s.title}</h3>
+                <p className="mt-3 text-[color:var(--muted-foreground)]">{s.approvedNarrative}</p>
                 {s.approvedQuote ? (
                   <blockquote className="mt-5 border-l-2 border-[color:var(--orange)] pl-4 italic">
                     &ldquo;{s.approvedQuote}&rdquo;
@@ -94,12 +79,10 @@ function SuccessStoriesPage() {
       ) : (
         <Section>
           <div className="mx-auto max-w-2xl text-center">
-            <PullQuote>
-              Fast isn&rsquo;t the goal. Getting it right is.
-            </PullQuote>
+            <PullQuote>Fast isn&rsquo;t the goal. Getting it right is.</PullQuote>
             <p className="mt-8 text-[color:var(--muted-foreground)]">
-              Approved client stories will appear here as they complete
-              written permission and compliance review.
+              Approved client stories will appear here as they complete written permission and
+              compliance review.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link to="/contact" className="btn-primary">
@@ -114,17 +97,11 @@ function SuccessStoriesPage() {
       )}
 
       {approvedTestimonials.length > 0 && (
-        <Section
-          tone="paper-2"
-          eyebrow="In their words"
-          heading="Testimonials."
-        >
+        <Section tone="paper-2" eyebrow="In their words" heading="Testimonials.">
           <div className="grid gap-5 md:grid-cols-2">
             {approvedTestimonials.map((t, i) => (
               <Sheet key={i}>
-                <p className="text-lg italic text-[color:var(--ink)]">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
+                <p className="text-lg italic text-[color:var(--ink)]">&ldquo;{t.quote}&rdquo;</p>
                 {t.attribution ? (
                   <p className="mt-3 text-sm font-semibold text-[color:var(--muted-foreground)]">
                     &mdash; {t.attribution}
