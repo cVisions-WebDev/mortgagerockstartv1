@@ -30,16 +30,16 @@ import { useRef } from "react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mortgage Rockstar\u2122 | Mortgage Clarity Before Commitment" },
+      { title: "Mortgage Rockstar\\u2122 | Mortgage Clarity Before Commitment" },
       {
         name: "description",
         content:
           "Know what you can really afford before you start shopping. Education-first mortgage guidance from Matt Arana, powered by Cornerstone First Mortgage.",
       },
-      { property: "og:title", content: "Mortgage Rockstar\u2122" },
+      { property: "og:title", content: "Mortgage Rockstar\\u2122 | Mortgage Clarity Before Commitment" },
       {
         property: "og:description",
-        content: "Human strategy. Clear numbers. Rockstar follow-through.",
+        content: "Know what you can really afford before you start shopping. Education-first mortgage guidance from Matt Arana, powered by Cornerstone First Mortgage.",
       },
       { property: "og:url", content: "/" },
       { property: "og:image", content: mattAsset.url },

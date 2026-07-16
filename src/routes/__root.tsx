@@ -75,23 +75,27 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mortgage Rockstar\u2122 | Mortgage Clarity Before Commitment" },
+      { title: "Mortgage Rockstar\\u2122 | Mortgage Clarity Before Commitment" },
       {
         name: "description",
         content:
-          "Matt Arana\u2019s education-first mortgage guidance platform, powered by Cornerstone First Mortgage. Human strategy. Clear numbers. Rockstar follow-through.",
+          "Know what you can really afford before you start shopping. Education-first mortgage guidance from Matt Arana, powered by Cornerstone First Mortgage.",
       },
       { name: "author", content: "Mortgage Rockstar\u2122" },
       { property: "og:site_name", content: "Mortgage Rockstar\u2122" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Mortgage Rockstar\u2122" },
+      { property: "og:title", content: "Mortgage Rockstar\\u2122 | Mortgage Clarity Before Commitment" },
       {
         property: "og:description",
         content:
-          "Mortgage clarity before commitment. Fall in love with the numbers first.",
+          "Know what you can really afford before you start shopping. Education-first mortgage guidance from Matt Arana, powered by Cornerstone First Mortgage.",
       },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#1a2942" },
+      { name: "twitter:title", content: "Mortgage Rockstar\\u2122 | Mortgage Clarity Before Commitment" },
+      { name: "twitter:description", content: "Know what you can really afford before you start shopping. Education-first mortgage guidance from Matt Arana, powered by Cornerstone First Mortgage." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d591dcbc-e4d3-475b-a97a-0902fc96d182/id-preview-051e6d83--56768a74-4b9c-4b9e-8164-a7cf648fbc9b.lovable.app-1784204583318.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d591dcbc-e4d3-475b-a97a-0902fc96d182/id-preview-051e6d83--56768a74-4b9c-4b9e-8164-a7cf648fbc9b.lovable.app-1784204583318.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
