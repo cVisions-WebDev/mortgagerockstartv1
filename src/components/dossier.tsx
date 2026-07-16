@@ -120,7 +120,7 @@ export function Section({
 /** Editorial pull-quote / signature-language line. */
 export function PullQuote({ children }: { children: ReactNode }) {
   return (
-    <blockquote className="border-l-4 border-[color:var(--orange)] pl-5 font-display text-xl italic leading-snug text-[color:var(--ink)] sm:text-2xl">
+    <blockquote className="border-l-4 border-[color:var(--orange)] pl-4 font-display text-xl italic leading-snug text-[color:var(--ink)] sm:text-2xl">
       &ldquo;{children}&rdquo;
     </blockquote>
   );

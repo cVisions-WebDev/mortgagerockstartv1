@@ -107,6 +107,7 @@ function EducationPage() {
 
 
       <Section
+        align="left"
         eyebrow="Written resources"
         heading="Articles organized by topic."
         intro={
@@ -167,6 +168,7 @@ function EducationPage() {
       </Section>
 
       <Section
+        align="left"
         tone="paper-2"
         eyebrow="Video learning library"
         heading="Short videos, clear answers."
@@ -210,6 +212,7 @@ function EducationPage() {
       </Section>
 
       <Section
+        align="center"
         eyebrow="Free downloadable guides"
         heading="Printable checklists and playbooks."
         intro={

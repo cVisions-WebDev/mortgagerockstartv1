@@ -67,6 +67,7 @@ function LoanProgramsIndex() {
 
 
       <Section
+        align="center"
         eyebrow="Program index"
         heading="Choose the file that fits your situation."
         intro={

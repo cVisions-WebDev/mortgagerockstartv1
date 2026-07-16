@@ -137,8 +137,8 @@ function SuccessStoriesPage() {
       )}
 
       <CTABand
-        eyebrow="Yours next"
-        heading="Let\u2019s build your story."
+        eyebrow="Your's next"
+        heading="Let's build your story."
         primary="Schedule Your Mortgage Strategy Session"
         primaryTo="/contact"
       />
