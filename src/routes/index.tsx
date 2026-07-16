@@ -305,6 +305,7 @@ function TickerBand() {
 function ADifferentApproach() {
   return (
     <Section
+      align="left"
       eyebrow="A different approach"
       heading={
         <>
@@ -363,7 +364,7 @@ function ADifferentApproach() {
         </Stagger>
       </div>
 
-      <div className="mt-14 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
+      <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
         <Reveal className="space-y-4 text-lg text-[color:var(--muted-foreground)]">
           <p>
             Rather than focusing solely on rates and products, we help
@@ -383,10 +384,16 @@ function ADifferentApproach() {
             Meet Matt &amp; Learn Our Story
           </Link>
         </Reveal>
-        <Reveal delay={0.15} className="lg:pl-6">
-          <PullQuote>
-            I&rsquo;m a resource, not a source.
-          </PullQuote>
+        <Reveal delay={0.15}>
+          <div className="photo-frame relative aspect-[4/5] w-full max-w-[420px] rotate-[1.5deg] lg:ml-auto">
+            <img
+              src={meetingImg}
+              alt="A mortgage advisor guiding a couple through their financing options"
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <span className="tape -top-3 left-10 rotate-[-4deg]" aria-hidden />
+          </div>
         </Reveal>
       </div>
     </Section>
