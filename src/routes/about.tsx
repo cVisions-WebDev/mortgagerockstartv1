@@ -154,16 +154,17 @@ function AboutPage() {
           </p>
         }
       >
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-5">
           {values.map((v, i) => (
-            <Sheet key={v.title} className="text-center">
-              <div className="mb-4 flex flex-col items-center gap-1">
-                <span className="number-tag">{`0${i + 1} / 05`}</span>
-                <h3 className="font-display text-xl font-black text-[color:var(--ink)]">
-                  {v.title}
-                </h3>
-              </div>
-              <p className="text-sm text-[color:var(--muted-foreground)]">
+            <Sheet
+              key={v.title}
+              className="w-full text-left sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)]"
+            >
+              <span className="number-tag">{`0${i + 1} / 05`}</span>
+              <h3 className="mt-2 font-display text-xl font-black text-[color:var(--ink)]">
+                {v.title}
+              </h3>
+              <p className="mt-3 text-sm text-[color:var(--muted-foreground)]">
                 {v.body}
               </p>
             </Sheet>
