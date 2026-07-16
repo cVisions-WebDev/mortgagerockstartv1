@@ -843,6 +843,7 @@ function SuccessPreview() {
   return (
     <Section
       tone="paper-2"
+      align="center"
       eyebrow="Success Stories"
       heading="Real People. Real Goals. Real Results."
       intro={
