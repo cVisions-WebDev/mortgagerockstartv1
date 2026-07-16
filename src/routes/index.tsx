@@ -62,25 +62,57 @@ function HomePage() {
       <NumbersMonument />
       <EducationPreview />
       <SuccessPreview />
-      <CTABand
-        eyebrow="Let\u2019s start with a conversation"
-        heading="Every successful mortgage begins with understanding your goals."
-        body={
-          <>
-            <p>
-              Whether you&rsquo;re purchasing your first home, upgrading,
-              investing, relocating, or preparing for the future, Mortgage
-              Rockstar is here to help you build a financing strategy with
-              confidence.
-            </p>
-          </>
-        }
-        primary="Schedule Your Mortgage Strategy Session"
-        primaryTo="/contact"
-        secondary="Contact Mortgage Rockstar"
-        secondaryTo="/contact"
-      />
+      <FinalCTA />
     </>
+  );
+}
+
+function FinalCTA() {
+  return (
+    <section className="bg-[color:var(--paper-2)] py-20 lg:py-24">
+      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+        <Reveal as="div">
+          <div className="sheet relative overflow-hidden p-8 sm:p-12 lg:p-14">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -top-8 right-10 hidden h-16 w-40 rounded-b-md bg-[color:var(--orange)] sm:block"
+            />
+            <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+              <div>
+                <p className="label-eyebrow">
+                  Let&rsquo;s Start with a Conversation
+                </p>
+                <h2 className="mt-3 font-display text-3xl font-black leading-[1.05] sm:text-4xl lg:text-5xl">
+                  Every successful mortgage begins with understanding your goals.
+                </h2>
+                <p className="mt-5 max-w-xl text-base text-[color:var(--muted-foreground)] sm:text-lg">
+                  Whether you&rsquo;re purchasing your first home, upgrading,
+                  investing, relocating, or preparing for the future, Mortgage
+                  Rockstar is here to help you build a financing strategy with
+                  confidence.
+                </p>
+                <div className="mt-8">
+                  <Link to="/contact" className="btn-primary">
+                    Schedule Your Mortgage Strategy Session
+                  </Link>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="photo-frame relative aspect-[4/5] w-full max-w-[420px] rotate-[2deg] lg:ml-auto">
+                  <img
+                    src={keysImg}
+                    alt="A family receiving the keys to their new home"
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                  <span className="tape -top-3 left-10 rotate-[-4deg]" aria-hidden />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
   );
 }
 
