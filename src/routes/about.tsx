@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CTABand, PageHero, Section, Sheet } from "@/components/dossier";
 import mattAsset from "@/assets/matt.jpg.asset.json";
-import meetingImg from "@/assets/meeting.jpg";
+import blueprintImg from "@/assets/blueprint.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -156,9 +156,14 @@ function AboutPage() {
       >
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {values.map((v, i) => (
-            <Sheet key={v.title} index={`0${i + 1} / 05`} label={v.title}>
-              <h3 className="font-display text-xl font-black">{v.title}</h3>
-              <p className="mt-3 text-sm text-[color:var(--muted-foreground)]">
+            <Sheet key={v.title} className="text-center">
+              <div className="mb-4 flex flex-col items-center gap-1">
+                <span className="number-tag">{`0${i + 1} / 05`}</span>
+                <h3 className="font-display text-xl font-black text-[color:var(--ink)]">
+                  {v.title}
+                </h3>
+              </div>
+              <p className="text-left text-sm text-[color:var(--muted-foreground)]">
                 {v.body}
               </p>
             </Sheet>
@@ -232,8 +237,8 @@ function AboutPage() {
           <div className="relative mx-auto h-[300px] w-full max-w-[420px] lg:mx-0">
             <div className="photo-frame h-full w-full">
               <img
-                src={meetingImg}
-                alt="One-on-one mortgage guidance session"
+                src={blueprintImg}
+                alt="Mortgage strategy and planning blueprint"
                 className="h-full w-full object-cover"
               />
             </div>
