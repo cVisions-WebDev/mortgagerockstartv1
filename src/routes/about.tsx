@@ -163,7 +163,7 @@ function AboutPage() {
                   {v.title}
                 </h3>
               </div>
-              <p className="text-left text-sm text-[color:var(--muted-foreground)]">
+              <p className="text-sm text-[color:var(--muted-foreground)]">
                 {v.body}
               </p>
             </Sheet>
