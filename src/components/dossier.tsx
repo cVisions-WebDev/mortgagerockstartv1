@@ -32,15 +32,13 @@ export function Sheet({
       whileInView={{ opacity: 1, y: 0, rotate }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-      whileHover={reduce ? undefined : { y: -6, rotate: rotate + 0.6, transition: { duration: 0.25 } }}
+      whileHover={
+        reduce ? undefined : { y: -6, rotate: rotate + 0.6, transition: { duration: 0.25 } }
+      }
     >
       {(label || index) && (
         <div className="mb-4 flex items-center justify-between">
-          {label ? (
-            <span className="label-eyebrow">{label}</span>
-          ) : (
-            <span />
-          )}
+          {label ? <span className="label-eyebrow">{label}</span> : <span />}
           {index ? <span className="number-tag">{index}</span> : null}
         </div>
       )}
@@ -76,34 +74,24 @@ export function Section({
         ? "bg-[color:var(--paper-2)]"
         : "bg-[color:var(--paper)]";
   const headerAlign =
-    align === "center"
-      ? "mx-auto text-center"
-      : align === "left"
-        ? "mr-auto"
-        : "mx-auto";
+    align === "center" ? "mx-auto text-center" : align === "left" ? "mr-auto" : "mx-auto";
   return (
     <section id={id} className={`relative ${bg} ${className}`}>
       <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
         {(eyebrow || heading || intro) && (
           <Reveal as="div" className={`mb-12 max-w-3xl ${headerAlign}`}>
             {eyebrow ? (
-              <p
-                className={`label-eyebrow ${tone === "ink" ? "text-[color:var(--orange)]" : ""}`}
-              >
+              <p className={`label-eyebrow ${tone === "ink" ? "text-[color:var(--orange)]" : ""}`}>
                 {eyebrow}
               </p>
             ) : null}
             {heading ? (
-              <h2 className="mt-3 text-3xl leading-[1.05] sm:text-4xl lg:text-5xl">
-                {heading}
-              </h2>
+              <h2 className="mt-3 text-3xl leading-[1.05] sm:text-4xl lg:text-5xl">{heading}</h2>
             ) : null}
             {intro ? (
               <div
                 className={`mt-5 space-y-4 text-base sm:text-lg ${
-                  tone === "ink"
-                    ? "text-white/80"
-                    : "text-[color:var(--muted-foreground)]"
+                  tone === "ink" ? "text-white/80" : "text-[color:var(--muted-foreground)]"
                 }`}
               >
                 {intro}
@@ -111,7 +99,9 @@ export function Section({
             ) : null}
           </Reveal>
         )}
-        <Reveal as="div" delay={0.08}>{children}</Reveal>
+        <Reveal as="div" delay={0.08}>
+          {children}
+        </Reveal>
       </div>
     </section>
   );
@@ -120,7 +110,7 @@ export function Section({
 /** Editorial pull-quote / signature-language line. */
 export function PullQuote({ children }: { children: ReactNode }) {
   return (
-    <blockquote className="border-l-4 border-[color:var(--orange)] pl-5 font-display text-xl italic leading-snug text-[color:var(--ink)] sm:text-2xl">
+    <blockquote className="border-l-4 border-[color:var(--orange)] pl-4 font-display text-xl italic leading-snug text-[color:var(--ink)] sm:text-2xl">
       &ldquo;{children}&rdquo;
     </blockquote>
   );
@@ -155,12 +145,8 @@ export function CTABand({
             />
             <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-end">
               <div>
-                {eyebrow ? (
-                  <p className="label-eyebrow">{eyebrow}</p>
-                ) : null}
-                <h2 className="mt-3 text-3xl leading-[1.05] sm:text-4xl lg:text-5xl">
-                  {heading}
-                </h2>
+                {eyebrow ? <p className="label-eyebrow">{eyebrow}</p> : null}
+                <h2 className="mt-3 text-3xl leading-[1.05] sm:text-4xl lg:text-5xl">{heading}</h2>
                 {body ? (
                   <div className="mt-5 max-w-2xl space-y-3 text-base text-[color:var(--muted-foreground)] sm:text-lg">
                     {body}
@@ -232,8 +218,13 @@ export function PageHero({
           ) : null}
           {ctas ? <div className="mt-8 flex flex-wrap gap-3">{ctas}</div> : null}
 
-          <div aria-hidden className="mt-10 hidden items-center gap-4 text-[color:var(--muted-foreground)] lg:flex">
-            <span className="number-tag">FILE&nbsp;NO.&nbsp;{fileLabel.slice(0, 2).toUpperCase()}-08</span>
+          <div
+            aria-hidden
+            className="mt-10 hidden items-center gap-4 text-[color:var(--muted-foreground)] lg:flex"
+          >
+            <span className="number-tag">
+              FILE&nbsp;NO.&nbsp;{fileLabel.slice(0, 2).toUpperCase()}-08
+            </span>
             <span className="h-px flex-1 bg-[color:var(--rule)]" />
             <span className="number-tag">Prepared by Matt Arana</span>
           </div>
@@ -256,14 +247,15 @@ export function PageHero({
                 <span className="label-eyebrow">{fileLabel}</span>
                 <span className="number-tag">01 / 01</span>
               </div>
-              <p className="mt-3 font-display text-lg font-black leading-tight">
-                {fileTitle}
-              </p>
+              <p className="mt-3 font-display text-lg font-black leading-tight">{fileTitle}</p>
               {fileBullets && fileBullets.length > 0 ? (
                 <ul className="mt-4 space-y-2 text-sm">
                   {fileBullets.slice(0, 4).map((b) => (
                     <li key={b} className="flex items-start gap-2">
-                      <span aria-hidden className="mt-1 h-1.5 w-3 shrink-0 bg-[color:var(--blue)]" />
+                      <span
+                        aria-hidden
+                        className="mt-1 h-1.5 w-3 shrink-0 bg-[color:var(--blue)]"
+                      />
                       <span>{b}</span>
                     </li>
                   ))}
@@ -301,7 +293,11 @@ export function HeroBreadcrumb({ items }: { items: { label: string; to?: string 
             ) : (
               it.label
             )}
-            {i < items.length - 1 ? <span aria-hidden className="ml-2">/</span> : null}
+            {i < items.length - 1 ? (
+              <span aria-hidden className="ml-2">
+                /
+              </span>
+            ) : null}
           </li>
         ))}
       </ol>

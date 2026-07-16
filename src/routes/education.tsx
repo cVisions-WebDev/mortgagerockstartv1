@@ -63,15 +63,9 @@ export const Route = createFileRoute("/education")({
 });
 
 function EducationPage() {
-  const approvedArticles = resources.filter(
-    (r) => r.approved && r.resourceType === "article",
-  );
-  const approvedVideos = resources.filter(
-    (r) => r.approved && r.resourceType === "video",
-  );
-  const approvedGuides = resources.filter(
-    (r) => r.approved && r.resourceType === "guide",
-  );
+  const approvedArticles = resources.filter((r) => r.approved && r.resourceType === "article");
+  const approvedVideos = resources.filter((r) => r.approved && r.resourceType === "video");
+  const approvedGuides = resources.filter((r) => r.approved && r.resourceType === "guide");
 
   return (
     <>
@@ -86,9 +80,8 @@ function EducationPage() {
           <>
             <p>Knowledge creates confidence.</p>
             <p>
-              Mortgage Rockstar&rsquo;s Education Center provides trusted
-              resources designed to help buyers understand every stage of
-              the mortgage journey.
+              Mortgage Rockstar&rsquo;s Education Center provides trusted resources designed to help
+              buyers understand every stage of the mortgage journey.
             </p>
           </>
         }
@@ -105,14 +98,14 @@ function EducationPage() {
         ]}
       />
 
-
       <Section
+        align="left"
         eyebrow="Written resources"
         heading="Articles organized by topic."
         intro={
           <p>
-            An indexed strategy binder of approved topics. New articles
-            publish as they are written and reviewed.
+            An indexed strategy binder of approved topics. New articles publish as they are written
+            and reviewed.
           </p>
         }
       >
@@ -159,14 +152,14 @@ function EducationPage() {
           <div className="mt-12 rounded-md border border-dashed border-[color:var(--rule)] bg-white p-8 text-center">
             <p className="label-eyebrow">In progress</p>
             <p className="mt-2 text-[color:var(--muted-foreground)]">
-              Articles are being prepared. New pieces publish as they
-              complete compliance review.
+              Articles are being prepared. New pieces publish as they complete compliance review.
             </p>
           </div>
         )}
       </Section>
 
       <Section
+        align="left"
         tone="paper-2"
         eyebrow="Video learning library"
         heading="Short videos, clear answers."
@@ -210,30 +203,23 @@ function EducationPage() {
       </Section>
 
       <Section
+        align="center"
         eyebrow="Free downloadable guides"
         heading="Printable checklists and playbooks."
         intro={
-          <p>
-            Guides activate here as they are finalized. Approved guide
-            names are listed below.
-          </p>
+          <p>Guides activate here as they are finalized. Approved guide names are listed below.</p>
         }
       >
         <ul className="grid gap-3 sm:grid-cols-2">
           {guides.map((g) => {
-            const match = approvedGuides.find(
-              (r) => r.title === g && r.fileUrl,
-            );
+            const match = approvedGuides.find((r) => r.title === g && r.fileUrl);
             return (
               <li
                 key={g}
                 className="flex items-center justify-between rounded-md border border-[color:var(--rule)] bg-white px-4 py-3"
               >
                 <span className="flex items-center gap-3">
-                  <span
-                    aria-hidden
-                    className="h-4 w-4 border border-[color:var(--ink)]"
-                  />
+                  <span aria-hidden className="h-4 w-4 border border-[color:var(--ink)]" />
                   <span className="text-sm font-medium">{g}</span>
                 </span>
                 {match?.fileUrl ? (
