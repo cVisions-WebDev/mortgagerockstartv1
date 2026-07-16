@@ -219,10 +219,10 @@
   letter-spacing: -0.005em;
   border-radius: var(--radius);
   transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.3), 0 10px 24px -8px oklch(0.58 0.20 27 / 0.7);
+  box-shadow: 0 1px 0 rgb(16 26 48 / 0.15), 0 10px 24px -8px color-mix(in oklab, var(--orange) 50%, transparent);
   &:hover {
     transform: translateY(-1px);
-    background: oklch(0.52 0.21 27);
+    background: color-mix(in oklab, var(--orange) 88%, black);
   }
   &:focus-visible {
     outline: 2px solid var(--blue);
