@@ -119,9 +119,17 @@ export function SiteHeader() {
                 </li>
               ))}
             </ul>
-            <Link to="/contact" className="btn-primary mt-3 w-full">
+            <Link to="/contact" className="btn-ghost mt-3 w-full">
               Schedule Strategy Session
             </Link>
+            <a
+              href="https://apply.mortgagerockstar.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-2 w-full"
+            >
+              Apply Now
+            </a>
           </nav>
         </div>
       )}
