@@ -365,7 +365,7 @@ function ADifferentApproach() {
     >
       <div className="relative">
         <div aria-hidden className="absolute left-0 right-0 top-16 hidden h-px bg-gradient-to-r from-transparent via-[color:var(--rule)] to-transparent lg:block" />
-        <Stagger className="grid gap-6 lg:grid-cols-3" gap={0.15}>
+        <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" gap={0.15}>
           {[
             { label: "Step 01", title: "Education comes first." },
             { label: "Step 02", title: "Strategy follows." },
