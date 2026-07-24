@@ -74,7 +74,7 @@ function FinalCTA() {
               aria-hidden
               className="pointer-events-none absolute -top-8 right-10 hidden h-16 w-40 rounded-b-md bg-[color:var(--orange)] sm:block"
             />
-            <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+            <div className="grid gap-10 md:grid-cols-[1.1fr_1fr] md:items-center">
               <div>
                 <p className="label-eyebrow">
                   Let&rsquo;s Start with a Conversation
