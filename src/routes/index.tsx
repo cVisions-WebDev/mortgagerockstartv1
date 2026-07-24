@@ -658,7 +658,7 @@ function BrandPillars() {
         </p>
       }
     >
-      <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr]">
+      <div className="grid gap-8 md:grid-cols-[1fr_1.4fr]">
         <div
           role="tablist"
           aria-label="Brand pillars"
