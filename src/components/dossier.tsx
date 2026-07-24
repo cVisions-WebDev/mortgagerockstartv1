@@ -237,8 +237,12 @@ export function PageHero({
             </Float>
             <span aria-hidden className="ring-mark bottom-8 right-2 h-24 w-24" />
 
-            <div className="photo-frame absolute right-0 top-6 h-[260px] w-[300px] rotate-[3deg] sm:w-[340px]">
-              <img src={image} alt={imageAlt} className="h-full w-full object-cover" />
+            <div className="photo-frame absolute right-0 top-6 h-[340px] w-[300px] rotate-[3deg] sm:w-[340px]">
+              <img
+                src={image}
+                alt={imageAlt}
+                className="h-full w-full object-cover object-top"
+              />
               <div className="tape left-1/2 top-[-10px] -translate-x-1/2 rotate-[-3deg]" />
             </div>
 
