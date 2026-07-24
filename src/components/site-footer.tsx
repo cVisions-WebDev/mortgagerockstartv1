@@ -5,7 +5,7 @@ export function SiteFooter() {
   return (
     <footer className="bg-[color:var(--ink)] text-[color:var(--paper)]">
       <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
             <div className="flex items-baseline gap-1.5">
               <span className="font-display text-2xl font-black tracking-tight">

@@ -62,7 +62,7 @@ function SuccessStoriesPage() {
 
       {approved.length > 0 ? (
         <Section eyebrow="Case files" heading="Selected stories.">
-          <div className="grid gap-6 lg:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
             {approved.map((s) => (
               <Sheet key={s.title} label="Case File">
                 <h3 className="font-display text-2xl font-black">{s.title}</h3>

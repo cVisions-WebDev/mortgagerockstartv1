@@ -119,7 +119,7 @@ function ContactPage() {
 
 
       <Section>
-        <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
+        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr]">
           <form
             onSubmit={handleSubmit}
             noValidate

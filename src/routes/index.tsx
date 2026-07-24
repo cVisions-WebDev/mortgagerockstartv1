@@ -74,7 +74,7 @@ function FinalCTA() {
               aria-hidden
               className="pointer-events-none absolute -top-8 right-10 hidden h-16 w-40 rounded-b-md bg-[color:var(--orange)] sm:block"
             />
-            <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+            <div className="grid gap-10 md:grid-cols-[1.1fr_1fr] md:items-center">
               <div>
                 <p className="label-eyebrow">
                   Let&rsquo;s Start with a Conversation
@@ -365,7 +365,7 @@ function ADifferentApproach() {
     >
       <div className="relative">
         <div aria-hidden className="absolute left-0 right-0 top-16 hidden h-px bg-gradient-to-r from-transparent via-[color:var(--rule)] to-transparent lg:block" />
-        <Stagger className="grid gap-6 lg:grid-cols-3" gap={0.15}>
+        <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" gap={0.15}>
           {[
             { label: "Step 01", title: "Education comes first." },
             { label: "Step 02", title: "Strategy follows." },
@@ -393,7 +393,7 @@ function ADifferentApproach() {
         </Stagger>
       </div>
 
-      <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+      <div className="mt-14 grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
         <Reveal className="space-y-4 text-lg text-[color:var(--muted-foreground)]">
           <p>
             Rather than focusing solely on rates and products, we help
@@ -436,7 +436,7 @@ function ADifferentApproach() {
 function PortraitBand() {
   return (
     <section className="relative overflow-hidden bg-[color:var(--paper-2)] py-24 lg:py-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1fr_1.1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 md:grid-cols-[1fr_1.1fr] lg:px-8">
         <div className="relative">
           <Parallax amount={30}>
             <div className="photo-frame relative aspect-[4/5] w-full max-w-[440px] -rotate-[1.5deg]">
@@ -537,7 +537,7 @@ function BeginWithKnowledge() {
   return (
     <section className="relative overflow-hidden bg-[color:var(--ink)] py-24 text-[color:var(--paper)] lg:py-32">
       <div aria-hidden className="absolute inset-0 opacity-[0.05] dossier-grid" />
-      <div className="relative mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[1fr_1.15fr] lg:items-center lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl gap-14 px-5 md:grid-cols-[1fr_1.15fr] md:items-center lg:px-8">
         <Reveal>
           <p className="label-eyebrow text-[color:var(--orange)]">
             Begin your journey with knowledge
@@ -658,7 +658,7 @@ function BrandPillars() {
         </p>
       }
     >
-      <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr]">
+      <div className="grid gap-8 md:grid-cols-[1fr_1.4fr]">
         <div
           role="tablist"
           aria-label="Brand pillars"
@@ -787,7 +787,7 @@ function EducationPreview() {
   return (
     <section className="relative bg-[color:var(--paper)]">
       <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-28">
-        <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+        <div className="grid gap-12 md:grid-cols-[1.1fr_1fr] md:items-start">
           <div>
             <Reveal>
               <p className="label-eyebrow">Education Center</p>
