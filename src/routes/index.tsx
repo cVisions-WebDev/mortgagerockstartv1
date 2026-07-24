@@ -787,7 +787,7 @@ function EducationPreview() {
   return (
     <section className="relative bg-[color:var(--paper)]">
       <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8 lg:py-28">
-        <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-start">
+        <div className="grid gap-12 md:grid-cols-[1.1fr_1fr] md:items-start">
           <div>
             <Reveal>
               <p className="label-eyebrow">Education Center</p>
