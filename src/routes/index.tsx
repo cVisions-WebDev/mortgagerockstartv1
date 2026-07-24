@@ -463,7 +463,7 @@ function PortraitBand() {
                 Matt Arana
               </p>
               <p className="mt-1 text-xs text-[color:var(--muted-foreground)]">
-                Cornerstone First Mortgage
+                Mortgage Rockstar
               </p>
             </div>
           </Reveal>
