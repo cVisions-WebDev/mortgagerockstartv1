@@ -156,7 +156,7 @@ function AboutPage() {
       </Section>
 
       <Section>
-        <div className="grid gap-10 lg:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
           <div className="sheet p-8 lg:p-10">
             <span className="label-eyebrow">Mission</span>
             <p className="mt-4 font-display text-2xl font-bold leading-snug text-[color:var(--ink)]">
