@@ -57,10 +57,18 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <Link to="/contact" className="btn-primary text-sm">
+        <div className="hidden items-center gap-2 lg:flex">
+          <Link to="/contact" className="btn-ghost text-sm">
             Schedule Strategy Session
           </Link>
+          <a
+            href="https://apply.mortgagerockstar.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary text-sm"
+          >
+            Apply Now
+          </a>
         </div>
 
         <button
@@ -111,9 +119,17 @@ export function SiteHeader() {
                 </li>
               ))}
             </ul>
-            <Link to="/contact" className="btn-primary mt-3 w-full">
+            <Link to="/contact" className="btn-ghost mt-3 w-full">
               Schedule Strategy Session
             </Link>
+            <a
+              href="https://apply.mortgagerockstar.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-2 w-full"
+            >
+              Apply Now
+            </a>
           </nav>
         </div>
       )}
