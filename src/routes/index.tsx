@@ -436,7 +436,7 @@ function ADifferentApproach() {
 function PortraitBand() {
   return (
     <section className="relative overflow-hidden bg-[color:var(--paper-2)] py-24 lg:py-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1fr_1.1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 md:grid-cols-[1fr_1.1fr] lg:px-8">
         <div className="relative">
           <Parallax amount={30}>
             <div className="photo-frame relative aspect-[4/5] w-full max-w-[440px] -rotate-[1.5deg]">
