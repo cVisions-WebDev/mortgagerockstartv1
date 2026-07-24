@@ -393,7 +393,7 @@ function ADifferentApproach() {
         </Stagger>
       </div>
 
-      <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+      <div className="mt-14 grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
         <Reveal className="space-y-4 text-lg text-[color:var(--muted-foreground)]">
           <p>
             Rather than focusing solely on rates and products, we help
