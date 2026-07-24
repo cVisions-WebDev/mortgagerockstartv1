@@ -13,6 +13,8 @@ import {
 } from "@/components/motion";
 import { useState } from "react";
 import mattAsset from "@/assets/matt.jpg.asset.json";
+import mattCtaAsset from "@/assets/matt-cta.png.asset.json";
+
 import homeAsset from "@/assets/home.jpg.asset.json";
 import coupleAsset from "@/assets/couple.jpg.asset.json";
 import deskAsset from "@/assets/desk.jpg.asset.json";
