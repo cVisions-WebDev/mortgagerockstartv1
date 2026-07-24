@@ -66,6 +66,7 @@ export const Route = createFileRoute("/loan-programs/$slug")({
 });
 
 const COMPLEX_SLUG = "complex-household-financing";
+const CALENDLY_URL = "https://calendly.com/mortgagerockstar/strategy-session";
 
 function LoanProgramPage() {
   const { program } = Route.useLoaderData();
