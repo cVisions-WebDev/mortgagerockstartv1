@@ -13,6 +13,8 @@ import {
 } from "@/components/motion";
 import { useState } from "react";
 import mattAsset from "@/assets/matt.jpg.asset.json";
+import mattCtaAsset from "@/assets/matt-cta.png.asset.json";
+
 import homeAsset from "@/assets/home.jpg.asset.json";
 import coupleAsset from "@/assets/couple.jpg.asset.json";
 import deskAsset from "@/assets/desk.jpg.asset.json";
@@ -97,9 +99,10 @@ function FinalCTA() {
               <div className="relative">
                 <div className="photo-frame relative aspect-[4/5] w-full max-w-[420px] rotate-[2deg] lg:ml-auto">
                   <img
-                    src={keysImg}
-                    alt="A family receiving the keys to their new home"
+                    src={mattCtaAsset.url}
+                    alt="Matt Arana, Founder of Mortgage Rockstar"
                     className="h-full w-full object-cover"
+
                     loading="lazy"
                   />
                   <span className="tape -top-3 left-10 rotate-[-4deg]" aria-hidden />
