@@ -66,6 +66,7 @@ export const Route = createFileRoute("/loan-programs/$slug")({
 });
 
 const COMPLEX_SLUG = "complex-household-financing";
+const CALENDLY_URL = "https://calendly.com/mortgagerockstar/strategy-session";
 
 function LoanProgramPage() {
   const { program } = Route.useLoaderData();
@@ -108,6 +109,14 @@ function LoanProgramPage() {
               <Link to="/contact" className="btn-primary">
                 {program.primaryCTA}
               </Link>
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Book on Calendly
+              </a>
               {program.secondaryCTA ? (
                 <Link to="/contact" className="btn-ghost">
                   {program.secondaryCTA}
