@@ -3,7 +3,6 @@ import { Section, Sheet } from "@/components/dossier";
 import { LoanSelector } from "@/components/loan-selector";
 import {
   Float,
-  HorizontalScroll,
   Marquee,
   Parallax,
   Reveal,
@@ -20,7 +19,6 @@ import deskAsset from "@/assets/desk.jpg.asset.json";
 import neighborhoodImg from "@/assets/neighborhood.jpg";
 import keysImg from "@/assets/keys.jpg";
 import familyImg from "@/assets/family.jpg";
-import blueprintImg from "@/assets/blueprint.jpg";
 import porchImg from "@/assets/porch.jpg";
 import meetingImg from "@/assets/meeting.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -55,7 +53,6 @@ function HomePage() {
       <TickerBand />
       <ADifferentApproach />
       <PortraitBand />
-      <MomentsGallery />
       <BeginWithKnowledge />
       <BrandPillars />
       <LoanExplorer />
@@ -938,51 +935,6 @@ function SuccessPreview() {
   );
 }
 
-/* -------------------------------------------------------------------- */
-/*  Moments Gallery — horizontal scroll photo strip                      */
-/* -------------------------------------------------------------------- */
-
-function MomentsGallery() {
-  const items = [
-    { img: neighborhoodImg, kicker: "The street", title: "Where life begins after closing." },
-    { img: keysImg, kicker: "The signature", title: "Numbers first. Keys after." },
-    { img: blueprintImg, kicker: "The plan", title: "Every file mapped, measured, understood." },
-    { img: porchImg, kicker: "The porch", title: "Real people. Real relief." },
-    { img: familyImg, kicker: "The family", title: "Confidence, delivered." },
-  ];
-  return (
-    <HorizontalScroll distance={62} className="bg-[color:var(--paper-2)]">
-      <div className="flex shrink-0 flex-col justify-center pr-8" style={{ width: "44vw" }}>
-        <span className="label-eyebrow">Moments</span>
-        <h2 className="mt-3 font-display text-5xl font-black leading-[0.98] tracking-tight lg:text-6xl">
-          Not a template.
-          <br />
-          <span className="marker-underline">A record.</span>
-        </h2>
-        <p className="mt-6 max-w-md text-lg text-[color:var(--muted-foreground)]">
-          Scroll through the moments that repeat with every Mortgage Rockstar
-          file &mdash; the street, the signature, the plan, the porch, the
-          people.
-        </p>
-      </div>
-      {items.map((it) => (
-        <figure
-          key={it.title}
-          className="photo-frame relative shrink-0 overflow-hidden"
-          style={{ width: "min(78vh, 520px)", height: "min(78vh, 640px)" }}
-        >
-          <img src={it.img} alt={it.title} className="h-full w-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--ink)]/90 via-[color:var(--ink)]/20 to-transparent" />
-          <figcaption className="absolute inset-x-0 bottom-0 p-6 text-[color:var(--paper)]">
-            <span className="label-eyebrow !text-[color:var(--orange)]">{it.kicker}</span>
-            <p className="mt-2 font-display text-2xl font-black leading-tight">{it.title}</p>
-          </figcaption>
-        </figure>
-      ))}
-      <div className="w-[10vw] shrink-0" aria-hidden />
-    </HorizontalScroll>
-  );
-}
 
 /* -------------------------------------------------------------------- */
 /*  Numbers Monument — parallax stats with photo background              */
