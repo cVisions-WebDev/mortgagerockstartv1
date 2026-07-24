@@ -143,7 +143,7 @@ export function CTABand({
               aria-hidden
               className="pointer-events-none absolute -top-8 right-10 hidden h-16 w-40 rounded-b-md bg-[color:var(--orange)] sm:block"
             />
-            <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-end">
+            <div className="grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-end">
               <div>
                 {eyebrow ? <p className="label-eyebrow">{eyebrow}</p> : null}
                 <h2 className="mt-3 text-3xl leading-[1.05] sm:text-4xl lg:text-5xl">{heading}</h2>
