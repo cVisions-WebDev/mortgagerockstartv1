@@ -276,8 +276,8 @@
 @utility marker-underline {
   background-image: linear-gradient(
     transparent 62%,
-    oklch(0.72 0.14 82 / 0.4) 62%,
-    oklch(0.72 0.14 82 / 0.4) 92%,
+    oklch(0.72 0.19 22 / 0.45) 62%,
+    oklch(0.72 0.19 22 / 0.45) 92%,
     transparent 92%
   );
 }
