@@ -537,7 +537,7 @@ function BeginWithKnowledge() {
   return (
     <section className="relative overflow-hidden bg-[color:var(--ink)] py-24 text-[color:var(--paper)] lg:py-32">
       <div aria-hidden className="absolute inset-0 opacity-[0.05] dossier-grid" />
-      <div className="relative mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[1fr_1.15fr] lg:items-center lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl gap-14 px-5 md:grid-cols-[1fr_1.15fr] md:items-center lg:px-8">
         <Reveal>
           <p className="label-eyebrow text-[color:var(--orange)]">
             Begin your journey with knowledge
