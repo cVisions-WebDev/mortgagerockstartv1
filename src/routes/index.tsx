@@ -23,6 +23,7 @@ import keysImg from "@/assets/keys.jpg";
 import familyImg from "@/assets/family.jpg";
 import porchImg from "@/assets/porch.jpg";
 import differentApproachAsset from "@/assets/different-approach.jpg.asset.json";
+import meetingImg from "@/assets/meeting.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
