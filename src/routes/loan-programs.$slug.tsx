@@ -209,6 +209,7 @@ function ComplexUmbrella() {
   return (
     <Section
       tone="paper-2"
+      align="left"
       eyebrow="Choose the situation most relevant to you"
       heading="Explore related programs."
     >
