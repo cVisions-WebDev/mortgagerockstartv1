@@ -41,7 +41,7 @@ export const Route = createFileRoute("/loan-programs/$slug")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-3xl px-5 py-32 text-center">
       <p className="label-eyebrow">404</p>
-      <h1 className="mt-3 font-display text-4xl font-black">
+      <h1 className="mt-3 font-display text-[2rem] font-black leading-[1.05]">
         This program isn&rsquo;t in the folder.
       </h1>
       <p className="mt-4 text-[color:var(--muted-foreground)]">
@@ -54,7 +54,7 @@ export const Route = createFileRoute("/loan-programs/$slug")({
   ),
   errorComponent: ({ reset }) => (
     <div className="mx-auto max-w-3xl px-5 py-32 text-center">
-      <h1 className="font-display text-3xl font-black">
+      <h1 className="font-display text-[1.5rem] font-black leading-[1.05]">
         This program didn&rsquo;t load.
       </h1>
       <button className="btn-primary mt-6" onClick={reset}>
@@ -97,7 +97,7 @@ function LoanProgramPage() {
             </nav>
 
             <p className="label-eyebrow">{program.heading}</p>
-            <h1 className="mt-4 font-display text-3xl font-black leading-[1.02] tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="mt-4 font-display text-[1.75rem] font-black leading-[1.05] tracking-tight sm:text-[2.25rem] lg:text-[2.75rem]">
               {program.title}
             </h1>
             <div className="mt-6 space-y-4 text-lg text-[color:var(--muted-foreground)]">
