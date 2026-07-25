@@ -22,7 +22,7 @@ import neighborhoodImg from "@/assets/neighborhood.jpg";
 import keysImg from "@/assets/keys.jpg";
 import familyImg from "@/assets/family.jpg";
 import porchImg from "@/assets/porch.jpg";
-import differentApproachAsset from "@/assets/different-approach.jpg.asset.json";
+import differentApproachAsset from "@/assets/section2222-img.jpg.asset.json";
 import meetingImg from "@/assets/meeting.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -421,7 +421,7 @@ function ADifferentApproach() {
           <div className="photo-frame relative aspect-[4/5] w-full max-w-[420px] rotate-[1.5deg] lg:ml-auto">
             <img
               src={differentApproachAsset.url}
-              alt="A mortgage advisor guiding a young family through their home financing options"
+              alt="A mortgage advisor and client shaking hands over a signed contract with a model home on the desk"
               className="h-full w-full object-cover"
               loading="lazy"
               width={1024}
