@@ -142,7 +142,7 @@ function Hero() {
             Mortgage clarity before commitment
           </motion.p>
 
-          <h1 className="mt-5 font-display text-[2.5rem] font-black leading-[0.98] tracking-tight text-[color:var(--ink)] sm:text-6xl lg:text-[4.5rem]">
+          <h1 className="mt-5 font-display text-[2.25rem] font-black leading-[0.98] tracking-tight text-[color:var(--ink)] sm:text-5xl lg:text-[3.75rem]">
             {["Your Mortgage.", "Your Future.", "Your", "Strategy."].map((line, i) => (
               <motion.span
                 key={i}

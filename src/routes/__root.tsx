@@ -20,7 +20,7 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-[color:var(--paper)] px-4">
       <div className="max-w-md text-center">
         <p className="label-eyebrow">404 &mdash; Off the strategy file</p>
-        <h1 className="mt-4 font-display text-5xl font-black tracking-tight text-[color:var(--ink)]">
+        <h1 className="mt-4 font-display text-4xl font-black tracking-tight text-[color:var(--ink)]">
           This page isn&rsquo;t in the folder.
         </h1>
         <p className="mt-4 text-sm text-[color:var(--muted-foreground)]">
@@ -47,7 +47,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-[color:var(--paper)] px-4">
       <div className="max-w-md text-center">
         <p className="label-eyebrow">Something interrupted the file</p>
-        <h1 className="mt-4 font-display text-3xl font-black tracking-tight text-[color:var(--ink)]">
+        <h1 className="mt-4 font-display text-2xl font-black tracking-tight text-[color:var(--ink)]">
           This page didn&rsquo;t load.
         </h1>
         <p className="mt-3 text-sm text-[color:var(--muted-foreground)]">
