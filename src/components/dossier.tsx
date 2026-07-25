@@ -208,7 +208,7 @@ export function PageHero({
         <Reveal as="div">
           {breadcrumb}
           <p className="label-eyebrow">{eyebrow}</p>
-          <h1 className="mt-4 max-w-3xl font-display text-4xl font-black leading-[1] tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-4 max-w-3xl font-display text-[2rem] font-black leading-[1.05] tracking-tight sm:text-[2.75rem] lg:text-[3.25rem]">
             {title}
           </h1>
           {intro ? (
