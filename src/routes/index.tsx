@@ -419,10 +419,12 @@ function ADifferentApproach() {
         <Reveal delay={0.15}>
           <div className="photo-frame relative aspect-[4/5] w-full max-w-[420px] rotate-[1.5deg] lg:ml-auto">
             <img
-              src={meetingImg}
-              alt="A mortgage advisor guiding a couple through their financing options"
+              src={differentApproachAsset.url}
+              alt="A mortgage advisor guiding a young family through their home financing options"
               className="h-full w-full object-cover"
               loading="lazy"
+              width={1024}
+              height={1280}
             />
             <span className="tape -top-3 left-10 rotate-[-4deg]" aria-hidden />
           </div>
