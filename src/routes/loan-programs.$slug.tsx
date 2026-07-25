@@ -97,7 +97,7 @@ function LoanProgramPage() {
             </nav>
 
             <p className="label-eyebrow">{program.heading}</p>
-            <h1 className="mt-4 font-display text-4xl font-black leading-[1.02] tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 font-display text-3xl font-black leading-[1.02] tracking-tight sm:text-4xl lg:text-5xl">
               {program.title}
             </h1>
             <div className="mt-6 space-y-4 text-lg text-[color:var(--muted-foreground)]">
