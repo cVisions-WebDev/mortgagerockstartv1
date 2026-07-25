@@ -143,7 +143,7 @@ function Hero() {
           </motion.p>
 
           <h1 className="mt-5 font-display text-[2.5rem] font-black leading-[0.98] tracking-tight text-[color:var(--ink)] sm:text-6xl lg:text-[4.5rem]">
-            {["Know what you can", "really afford", "before", "you start shopping."].map((line, i) => (
+            {["Your Mortgage.", "Your Future.", "Your", "Strategy."].map((line, i) => (
               <motion.span
                 key={i}
                 initial={{ opacity: 0, y: 30, clipPath: "inset(0 0 100% 0)" }}
@@ -151,7 +151,7 @@ function Hero() {
                 transition={{ duration: 0.8, delay: 0.15 + i * 0.12, ease: [0.22, 1, 0.36, 1] }}
                 className="block"
               >
-                {i === 1 ? <span className="marker-underline">{line}</span> : line}
+                {i === 3 ? <span className="marker-underline">{line}</span> : line}
               </motion.span>
             ))}
           </h1>
