@@ -73,10 +73,10 @@
   --rule: oklch(0.9 0.008 240);        /* hairline */
 
   /* Action + trim */
-  --blue: oklch(0.5 0.08 210);         /* deep teal accent text */
-  --blue-soft: oklch(0.95 0.02 210);
-  --orange: oklch(0.45 0.07 215);      /* deep teal button */
-  --orange-soft: oklch(0.94 0.02 215);
+  --blue: #427B90;                     /* deep teal accent text */
+  --blue-soft: #E1F2F9;
+  --orange: #427B90;                   /* deep teal button */
+  --orange-soft: #E1F2F9;
   --highlight: oklch(0.78 0.13 210);
 
 
