@@ -240,7 +240,11 @@ function ComplexUmbrella() {
 function RelatedPrograms({ currentSlug }: { currentSlug: string }) {
   const related = loanPrograms.filter((p) => p.slug !== currentSlug).slice(0, 4);
   return (
-    <Section eyebrow="Other programs" heading="Keep exploring the index.">
+    <Section
+      align="center"
+      eyebrow="Other programs"
+      heading="Keep exploring the index."
+    >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {related.map((p) => (
           <Sheet key={p.slug} label={p.documentLabel}>
