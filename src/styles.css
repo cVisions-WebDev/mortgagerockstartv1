@@ -78,6 +78,7 @@
   --orange: #427B90;                   /* deep teal button */
   --orange-soft: #E1F2F9;
   --highlight: oklch(0.78 0.13 210);
+  --orange-hover: oklch(0.487 0.071 224.2); /* #2A687E */
 
 
   /* Shadcn mappings */
@@ -222,7 +223,7 @@
   box-shadow: 0 1px 0 rgb(16 26 48 / 0.15), 0 10px 24px -8px color-mix(in oklab, var(--orange) 50%, transparent);
   &:hover {
     transform: translateY(-1px);
-    background: color-mix(in oklab, var(--orange) 88%, black);
+    background: var(--orange-hover);
   }
   &:focus-visible {
     outline: 2px solid var(--blue);
