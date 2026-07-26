@@ -49,6 +49,10 @@
   --color-orange: var(--orange);
   --color-orange-soft: var(--orange-soft);
   --color-highlight: var(--highlight);
+  --color-coral: var(--coral);
+  --color-coral-hover: var(--coral-hover);
+  --color-coral-active: var(--coral-active);
+  --color-coral-soft: var(--coral-soft);
 
   --font-display: var(--font-display-stack);
   --font-sans: var(--font-body-stack);
@@ -79,6 +83,12 @@
   --orange-soft: #E1F2F9;
   --highlight: oklch(0.78 0.13 210);
   --orange-hover: oklch(0.487 0.071 224.2); /* #2A687E */
+
+  /* Apply Now CTA */
+  --coral: #EA6A5A;
+  --coral-hover: #D25849;
+  --coral-active: #B9493C;
+  --coral-soft: #FBE8E5;
 
 
   /* Shadcn mappings */
@@ -224,6 +234,33 @@
   &:hover {
     transform: translateY(-1px);
     background: var(--orange-hover);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+  }
+}
+
+@utility btn-apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.4rem;
+  background: var(--coral);
+  color: oklch(0.98 0.02 85);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: -0.005em;
+  border-radius: var(--radius);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  box-shadow: 0 10px 30px color-mix(in oklab, var(--coral) 28%, transparent);
+  &:hover {
+    transform: translateY(-1px);
+    background: var(--coral-hover);
+  }
+  &:active {
+    background: var(--coral-active);
   }
   &:focus-visible {
     outline: 2px solid var(--blue);

@@ -418,7 +418,7 @@ function ADifferentApproach() {
             href={APPLY_NOW_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary mt-4 inline-flex"
+            className="btn-apply mt-4 inline-flex"
           >
             Apply Now
           </a>
@@ -527,7 +527,7 @@ function PortraitBand() {
 
           <Reveal delay={0.35}>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-apply">
                 Apply Now
               </a>
               <Link to="/about" className="btn-ghost">
@@ -570,7 +570,7 @@ function BeginWithKnowledge() {
             </p>
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-apply">
               Apply Now
             </a>
             <Link to="/education" className="btn-invert">
@@ -774,7 +774,7 @@ function LoanExplorer() {
         <LoanSelector />
       </Reveal>
       <div className="mt-10 flex flex-wrap justify-center gap-3">
-        <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+        <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-apply">
           Apply Now
         </a>
         <Link to="/loan-programs" className="btn-ghost">
@@ -857,7 +857,7 @@ function EducationPreview() {
             </Stagger>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-apply">
                 Apply Now
               </a>
               <Link to="/education" className="btn-ghost">
@@ -942,7 +942,7 @@ function SuccessPreview() {
       <Reveal delay={0.2}>
         <div className="mt-12 mx-auto max-w-2xl text-center">
           <div className="flex flex-wrap justify-center gap-3">
-            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-apply">
               Apply Now
             </a>
             <Link to="/success-stories" className="btn-ghost">

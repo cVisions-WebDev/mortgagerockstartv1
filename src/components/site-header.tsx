@@ -65,7 +65,7 @@ export function SiteHeader() {
             href="https://apply.mortgagerockstar.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary text-sm"
+            className="btn-apply text-sm"
           >
             Apply Now
           </a>
@@ -123,11 +123,11 @@ export function SiteHeader() {
               Schedule Strategy Session
             </Link>
             <a
-              href="https://apply.mortgagerockstar.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-2 w-full"
-            >
+            href="https://apply.mortgagerockstar.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-apply mt-2 w-full"
+          >
               Apply Now
             </a>
           </nav>

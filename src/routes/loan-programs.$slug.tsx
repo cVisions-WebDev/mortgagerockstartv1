@@ -118,7 +118,7 @@ function LoanProgramPage() {
                     href={APPLY_NOW_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary"
+                    className="btn-apply"
                   >
                     Apply Now
                   </a>
@@ -147,7 +147,7 @@ function LoanProgramPage() {
                   href={APPLY_NOW_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="btn-apply"
                 >
                   Apply Now
                 </a>
