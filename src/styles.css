@@ -49,6 +49,10 @@
   --color-orange: var(--orange);
   --color-orange-soft: var(--orange-soft);
   --color-highlight: var(--highlight);
+  --color-coral: var(--coral);
+  --color-coral-hover: var(--coral-hover);
+  --color-coral-active: var(--coral-active);
+  --color-coral-soft: var(--coral-soft);
 
   --font-display: var(--font-display-stack);
   --font-sans: var(--font-body-stack);
