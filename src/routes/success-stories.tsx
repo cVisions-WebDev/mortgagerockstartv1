@@ -206,6 +206,7 @@ function SuccessStoriesPage() {
               </Link>
             </div>
           </div>
+          <ClientStories />
         </Section>
       )}
 
