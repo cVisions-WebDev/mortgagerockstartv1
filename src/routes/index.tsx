@@ -101,7 +101,7 @@ function FinalCTA() {
                   >
                     Apply Now
                   </a>
-                  <Link to="/contact" className="btn-primary">
+                  <Link to="/contact" className="btn-ghost">
                     Schedule Your Mortgage Strategy Session
                   </Link>
                 </div>
