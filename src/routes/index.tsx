@@ -570,12 +570,12 @@ function BeginWithKnowledge() {
             </p>
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Link to="/education" className="btn-primary">
-              Visit the Education Center
-            </Link>
-            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-invert">
+            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
               Apply Now
             </a>
+            <Link to="/education" className="btn-invert">
+              Visit the Education Center
+            </Link>
           </div>
         </Reveal>
 
