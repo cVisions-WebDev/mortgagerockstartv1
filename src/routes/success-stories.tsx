@@ -71,22 +71,10 @@ function Rating({ value, label }: { value: number; label: string }) {
 
 function ClientStories() {
   return (
-    <div className="mt-16 space-y-16 sm:mt-20 sm:space-y-20 lg:space-y-24">
-      {clientStories.map((s) => (
-        <article
-          key={s.name}
-          className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start lg:gap-12"
-        >
-          <figure className="photo-frame relative aspect-[4/3] lg:aspect-[4/5]">
-            <img
-              src={s.img}
-              alt={s.alt}
-              className="h-full w-full object-cover"
-              loading="lazy"
-            />
-            <span className="tape -top-3 left-8 rotate-[-4deg]" aria-hidden />
-          </figure>
-
+    <div className="space-y-16 sm:space-y-20 lg:space-y-24">
+      {clientStories.map((s, i) => {
+        const reversed = i === 1;
+        const content = (
           <div className="min-w-0 text-left">
             <span className="label-eyebrow">{s.kicker}</span>
             <h3 className="mt-3 font-display text-2xl font-black leading-tight sm:text-3xl">
@@ -97,16 +85,40 @@ function ClientStories() {
             </p>
             <Rating value={s.rating} label={s.name} />
             <div className="mt-5 space-y-4 leading-relaxed text-[color:var(--muted-foreground)]">
-              {s.paragraphs.map((p, i) => (
-                <p key={i}>{p}</p>
+              {s.paragraphs.map((p, j) => (
+                <p key={j}>{p}</p>
               ))}
             </div>
             <blockquote className="mt-6 border-l-2 border-[color:var(--orange)] pl-4 font-display text-lg italic leading-snug text-[color:var(--ink)]">
               &ldquo;{s.quote}&rdquo;
             </blockquote>
           </div>
-        </article>
-      ))}
+        );
+        const figure = (
+          <figure className="photo-frame relative aspect-[4/3] lg:aspect-[4/5]">
+            <img
+              src={s.img}
+              alt={s.alt}
+              className="h-full w-full object-cover"
+              loading="lazy"
+            />
+            <span className="tape -top-3 left-8 rotate-[-4deg]" aria-hidden />
+          </figure>
+        );
+        return (
+          <article
+            key={s.name}
+            className={`grid gap-8 lg:items-start lg:gap-12 ${
+              reversed
+                ? "lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]"
+                : "lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]"
+            }`}
+          >
+            {reversed ? content : figure}
+            {reversed ? figure : content}
+          </article>
+        );
+      })}
     </div>
   );
 }
