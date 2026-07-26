@@ -207,9 +207,19 @@ function AboutPage() {
               result is a mortgage experience that combines real human guidance with institutional
               capability.
             </p>
-            <Link to="/contact" className="btn-primary mt-4">
-              Start the Conversation
-            </Link>
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <Link to="/contact" className="btn-primary">
+                Start the Conversation
+              </Link>
+              <a
+                href="https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-invert"
+              >
+                Apply Now
+              </a>
+            </div>
           </div>
           <div className="relative mx-auto h-[300px] w-full max-w-[420px] lg:mx-0">
             <div className="photo-frame h-full w-full">
