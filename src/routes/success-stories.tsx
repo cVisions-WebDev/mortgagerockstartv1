@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Star } from "lucide-react";
-import { CTABand, PageHero, PullQuote, Section, Sheet } from "@/components/dossier";
+import { CTABand, PageHero, Section, Sheet } from "@/components/dossier";
 import { successStories, testimonials } from "@/config/site";
 import familyImg from "@/assets/family.jpg";
 import porchImg from "@/assets/porch.jpg";
