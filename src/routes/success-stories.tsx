@@ -197,28 +197,31 @@ function SuccessStoriesPage() {
           </div>
         </Section>
       ) : (
-        <Section>
-          <div className="mx-auto max-w-2xl text-center">
-            <PullQuote>Fast isn&rsquo;t the goal. Getting it right is.</PullQuote>
-            <p className="mt-8 text-[color:var(--muted-foreground)]">
-              Approved client stories will appear here as they complete written permission and
-              compliance review.
+        <Section
+          align="center"
+          eyebrow="Case files"
+          heading="Real people. Real plans. Real closings."
+          intro={
+            <p>
+              Each story reflects a family or individual who started with a conversation, built a
+              strategy, and moved forward with confidence.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a
-                href="https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-apply"
-              >
-                Apply Now
-              </a>
-              <Link to="/loan-programs" className="btn-ghost">
-                Explore Loan Programs
-              </Link>
-            </div>
-          </div>
+          }
+        >
           <ClientStories />
+          <div className="mt-16 flex flex-wrap justify-center gap-3 sm:mt-20">
+            <a
+              href="https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-apply"
+            >
+              Apply Now
+            </a>
+            <Link to="/loan-programs" className="btn-ghost">
+              Explore Loan Programs
+            </Link>
+          </div>
         </Section>
       )}
 
