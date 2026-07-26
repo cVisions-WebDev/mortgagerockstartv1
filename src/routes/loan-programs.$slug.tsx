@@ -67,6 +67,12 @@ export const Route = createFileRoute("/loan-programs/$slug")({
 
 const COMPLEX_SLUG = "complex-household-financing";
 const APPLY_NOW_URL = "https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com";
+const APPLY_FIRST_SLUGS = [
+  "first-time-homebuyer",
+  "refinance",
+  "complex-household-financing",
+  "self-employed",
+];
 
 function LoanProgramPage() {
   const { program } = Route.useLoaderData();
