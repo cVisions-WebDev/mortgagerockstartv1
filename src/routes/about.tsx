@@ -3,6 +3,8 @@ import { CTABand, PageHero, Section, Sheet } from "@/components/dossier";
 import mattAsset from "@/assets/matt.jpg.asset.json";
 import blueprintImg from "@/assets/blueprint.jpg";
 
+const APPLY_NOW_URL = "https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com";
+
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [

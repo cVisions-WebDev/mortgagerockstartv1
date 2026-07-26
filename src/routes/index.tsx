@@ -773,8 +773,11 @@ function LoanExplorer() {
       <Reveal>
         <LoanSelector />
       </Reveal>
-      <div className="mt-10 flex justify-center">
-        <Link to="/loan-programs" className="btn-primary">
+      <div className="mt-10 flex flex-wrap justify-center gap-3">
+        <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+          Apply Now
+        </a>
+        <Link to="/loan-programs" className="btn-ghost">
           Find the Right Loan Program
         </Link>
       </div>
