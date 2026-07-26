@@ -199,7 +199,7 @@ function SuccessStoriesPage() {
       ) : (
         <Section
           align="center"
-          eyebrow="Case files"
+          eyebrow="Featured Stories"
           heading="Real people. Real plans. Real closings."
           intro={
             <p>
