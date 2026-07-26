@@ -84,6 +84,12 @@
   --highlight: oklch(0.78 0.13 210);
   --orange-hover: oklch(0.487 0.071 224.2); /* #2A687E */
 
+  /* Apply Now CTA */
+  --coral: #EA6A5A;
+  --coral-hover: #D25849;
+  --coral-active: #B9493C;
+  --coral-soft: #FBE8E5;
+
 
   /* Shadcn mappings */
   --background: var(--paper);
