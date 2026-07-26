@@ -527,12 +527,12 @@ function PortraitBand() {
 
           <Reveal delay={0.35}>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/about" className="btn-primary">
-                Meet Matt &amp; Learn Our Story
-              </Link>
-              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
                 Apply Now
               </a>
+              <Link to="/about" className="btn-ghost">
+                Meet Matt &amp; Learn Our Story
+              </Link>
             </div>
           </Reveal>
         </div>
