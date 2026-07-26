@@ -13,7 +13,7 @@ export interface LoanProgram {
   extra?: string; // additional approved paragraph
   approvedBullets?: string[];
   bulletsLabel?: string;
-  primaryCTA: string;
+  primaryCTA?: string;
   secondaryCTA?: string;
   documentLabel: string; // dossier tab
   approved: true;
