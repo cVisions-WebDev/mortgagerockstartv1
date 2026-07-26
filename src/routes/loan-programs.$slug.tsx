@@ -106,9 +106,11 @@ function LoanProgramPage() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/contact" className="btn-primary">
-                {program.primaryCTA}
-              </Link>
+              {program.primaryCTA ? (
+                <Link to="/contact" className="btn-primary">
+                  {program.primaryCTA}
+                </Link>
+              ) : null}
               <a
                 href={APPLY_NOW_URL}
                 target="_blank"
