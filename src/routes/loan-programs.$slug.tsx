@@ -67,6 +67,12 @@ export const Route = createFileRoute("/loan-programs/$slug")({
 
 const COMPLEX_SLUG = "complex-household-financing";
 const APPLY_NOW_URL = "https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com";
+const APPLY_FIRST_SLUGS = [
+  "first-time-homebuyer",
+  "refinance",
+  "complex-household-financing",
+  "self-employed",
+];
 
 function LoanProgramPage() {
   const { program } = Route.useLoaderData();
@@ -105,26 +111,49 @@ function LoanProgramPage() {
               {program.extra ? <p>{program.extra}</p> : null}
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              {program.primaryCTA ? (
-                <Link to="/contact" className="btn-primary">
-                  {program.primaryCTA}
-                </Link>
-              ) : null}
-              <a
-                href={APPLY_NOW_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-apply"
-              >
-                Apply Now
-              </a>
-              {program.secondaryCTA ? (
-                <Link to="/contact" className="btn-ghost">
-                  {program.secondaryCTA}
-                </Link>
-              ) : null}
-            </div>
+            {APPLY_FIRST_SLUGS.includes(program.slug) ? (
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href={APPLY_NOW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-apply"
+                >
+                  Apply Now
+                </a>
+                {program.primaryCTA ? (
+                  <Link to="/contact" className="btn-ghost">
+                    {program.primaryCTA}
+                  </Link>
+                ) : null}
+                {program.secondaryCTA ? (
+                  <Link to="/contact" className="btn-ghost">
+                    {program.secondaryCTA}
+                  </Link>
+                ) : null}
+              </div>
+            ) : (
+              <div className="mt-8 flex flex-wrap gap-3">
+                {program.primaryCTA ? (
+                  <Link to="/contact" className="btn-primary">
+                    {program.primaryCTA}
+                  </Link>
+                ) : null}
+                <a
+                  href={APPLY_NOW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-apply"
+                >
+                  Apply Now
+                </a>
+                {program.secondaryCTA ? (
+                  <Link to="/contact" className="btn-ghost">
+                    {program.secondaryCTA}
+                  </Link>
+                ) : null}
+              </div>
+            )}
           </div>
 
           <ProgramDossier program={program} />
