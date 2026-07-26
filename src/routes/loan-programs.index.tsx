@@ -77,7 +77,7 @@ function LoanProgramsIndex() {
             href="https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary"
+            className="btn-apply"
           >
             Apply Now
           </a>

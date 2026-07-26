@@ -210,7 +210,7 @@ function AboutPage() {
               capability.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-3">
-              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-apply">
                 Apply Now
               </a>
               <Link to="/contact" className="btn-invert">
