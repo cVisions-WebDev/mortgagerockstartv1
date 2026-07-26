@@ -3,6 +3,8 @@ import { CTABand, PageHero, Section, Sheet } from "@/components/dossier";
 import mattAsset from "@/assets/matt.jpg.asset.json";
 import blueprintImg from "@/assets/blueprint.jpg";
 
+const APPLY_NOW_URL = "https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com";
+
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
@@ -208,17 +210,12 @@ function AboutPage() {
               capability.
             </p>
             <div className="mt-4 flex flex-wrap items-center gap-3">
-              <Link to="/contact" className="btn-primary">
-                Start the Conversation
-              </Link>
-              <a
-                href="https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-invert"
-              >
+              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
                 Apply Now
               </a>
+              <Link to="/contact" className="btn-invert">
+                Start the Conversation
+              </Link>
             </div>
           </div>
           <div className="relative mx-auto h-[300px] w-full max-w-[420px] lg:mx-0">
