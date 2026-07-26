@@ -92,7 +92,15 @@ function FinalCTA() {
                   Rockstar is here to help you build a financing strategy with
                   confidence.
                 </p>
-                <div className="mt-8">
+                <div className="mt-8 flex flex-col gap-3">
+                  <a
+                    href={APPLY_NOW_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-apply"
+                  >
+                    Apply Now
+                  </a>
                   <Link to="/contact" className="btn-primary">
                     Schedule Your Mortgage Strategy Session
                   </Link>
