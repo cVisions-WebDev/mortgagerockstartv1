@@ -110,12 +110,12 @@ function LoanProgramPage() {
                 {program.primaryCTA}
               </Link>
               <a
-                href={CALENDLY_URL}
+                href={APPLY_NOW_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                Book on Calendly
+                Apply Now
               </a>
               {program.secondaryCTA ? (
                 <Link to="/contact" className="btn-ghost">
