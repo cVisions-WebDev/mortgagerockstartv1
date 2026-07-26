@@ -27,6 +27,7 @@ import meetingImg from "@/assets/meeting.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
+const APPLY_NOW_URL = "https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -413,9 +414,14 @@ function ADifferentApproach() {
           <p className="font-display text-2xl font-bold text-[color:var(--ink)]">
             Educate first. Guide with integrity. Build lasting relationships.
           </p>
-          <Link to="/about" className="btn-primary mt-4 inline-flex">
-            Meet Matt &amp; Learn Our Story
-          </Link>
+          <a
+            href={APPLY_NOW_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary mt-4 inline-flex"
+          >
+            Apply Now
+          </a>
         </Reveal>
         <Reveal delay={0.15}>
           <div className="photo-frame relative aspect-[4/5] w-full max-w-[420px] rotate-[1.5deg] lg:ml-auto">
@@ -524,9 +530,9 @@ function PortraitBand() {
               <Link to="/about" className="btn-primary">
                 Meet Matt &amp; Learn Our Story
               </Link>
-              <Link to="/contact" className="btn-ghost">
-                Schedule Your Strategy Session
-              </Link>
+              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+                Apply Now
+              </a>
             </div>
           </Reveal>
         </div>
@@ -563,9 +569,14 @@ function BeginWithKnowledge() {
               future, we&rsquo;re here to help you every step of the way.
             </p>
           </div>
-          <Link to="/education" className="btn-primary mt-8">
-            Visit the Education Center
-          </Link>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Link to="/education" className="btn-primary">
+              Visit the Education Center
+            </Link>
+            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-invert">
+              Apply Now
+            </a>
+          </div>
         </Reveal>
 
         <div className="relative h-[480px]">
@@ -843,11 +854,11 @@ function EducationPreview() {
             </Stagger>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/education" className="btn-primary">
-                Browse Educational Resources
-              </Link>
+              <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                Apply Now
+              </a>
               <Link to="/education" className="btn-ghost">
-                Watch Mortgage Videos
+                Browse Educational Resources
               </Link>
             </div>
           </div>
@@ -928,11 +939,11 @@ function SuccessPreview() {
       <Reveal delay={0.2}>
         <div className="mt-12 mx-auto max-w-2xl text-center">
           <div className="flex flex-wrap justify-center gap-3">
-            <Link to="/success-stories" className="btn-primary">
+            <a href={APPLY_NOW_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">
+              Apply Now
+            </a>
+            <Link to="/success-stories" className="btn-ghost">
               Read Client Success Stories
-            </Link>
-            <Link to="/contact" className="btn-ghost">
-              Schedule Your Success Story
             </Link>
           </div>
         </div>

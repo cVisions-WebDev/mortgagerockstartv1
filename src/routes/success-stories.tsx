@@ -85,9 +85,14 @@ function SuccessStoriesPage() {
               compliance review.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link to="/contact" className="btn-primary">
-                Schedule Your Success Story
-              </Link>
+              <a
+                href="https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Apply Now
+              </a>
               <Link to="/loan-programs" className="btn-ghost">
                 Explore Loan Programs
               </Link>

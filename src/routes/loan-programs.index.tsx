@@ -72,6 +72,16 @@ function LoanProgramsIndex() {
         }
       >
         <LoanSelector />
+        <div className="mt-10 flex justify-center">
+          <a
+            href="https://portal.myhometrac.com/homehub/signup/marana@cfmtg.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary"
+          >
+            Apply Now
+          </a>
+        </div>
       </Section>
 
       <CTABand
